@@ -1,0 +1,212 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+body{
+    color:#171a20;
+    font-family: 'M PLUS 1', sans-serif;
+}
+.desktop{
+    display: none;
+}
+@media(min-width:1200px){
+    .desktop{
+        display: initial;
+    }
+}
+header{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    padding: 15px 20px;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+}
+a.logo{
+    height: 12px;
+    width: 100px;
+    color: inherit;
+}
+header a{
+    color: inherit;
+}
+header nav a{
+    text-decoration: none;
+    padding: 5px 10px;
+}
+header nav .center{
+    text-align: center;
+}
+header nav.right{
+    text-align: right;
+}
+section{
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+}
+section .content{
+    
+    width: 100%;
+    height: 100vh;
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+    text-align: center;
+    display: grid;
+    grid-template-rows: min-content auto min-content;
+}
+section h1{
+font-size: 2.5rem;
+}
+section a{
+    color: inherit;
+}
+section .buttons a{
+    display: block;
+    background-color: #eee;
+    color: inherit;
+    padding: 12px 50px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 500;
+}
+section .buttons a:first-child{
+    background-color: #444;
+    color: #fff;
+
+}
+section .buttons{
+display: grid;
+row-gap: 20px;
+margin: 0 40px;
+}
+@media(min-width:768px){
+    section .buttons{
+        max-width: width 640px;
+        margin: 0 auto;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+    }
+}
+.offcanvas-body{
+    position: fixed;
+    right: 0px;
+    width: 350px;
+    background-color: #fff;
+    margin-top: 80px;
+    
+   
+   
+}
+
+.offcanvas-body a{
+    
+    
+    color: inherit;
+    text-decoration: none;
+    padding: 8px; 
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    align-items: flex-start;
+}
+.right .btn{
+    outline: none;
+    border: none;
+}
+
+header .center a:hover{
+    background-color: rgba(148, 148, 148, 0.3);
+    border-radius: .8rem;
+    color: #171a20;
+}
+header .logo a{
+    text-decoration: none;
+}
+header .logo svg:hover{
+    color: #171a20;
+   
+}
+header .right a:hover{
+    background-color: rgba(148, 148, 148, 0.3);
+    border-radius: .8rem;
+    color: #171a20;
+}
+header .right .btn-outline-none:hover{
+    background-color: rgba(148, 148, 148, 0.3);
+    border-radius: .8rem;
+    color: #171a20;
+}
+
+header .right .us-btn{
+    
+   text-align: start; 
+   padding: 8px;
+}
+header .right .us-btn .btn{
+    margin-top: -10px;
+    display: flex;
+    margin-left: 20px;
+    font-size: 15px;
+}
+header .right .us-btn:hover{
+    background-color: rgba(148, 148, 148, 0.3);
+    border-radius: .8rem;
+    color: #171a20;
+}
+a .shop-now{
+    display:flex;
+    justify-content: center;
+    width: 15rem;
+}
+.black-btn{
+    width: 18rem;
+    outline: none;
+    border: none;
+    height: 2.5rem;
+    background-color: black;
+    color: white;
+}
+footer{
+    position: relative;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+  
+
+}
+footer a{
+    text-decoration: none;
+    padding:0 10px;
+    color: #171a20;
+    padding-bottom: 20px;
+}
+footer a:hover{
+    color: #171a20;
+}
+@media(max-width:768px){
+    footer .foot{
+       display: grid;
+    }
+}
+.fading{
+    transition: .5s;
+}
+.fading-2{
+    transition: .5s;
+}
+.fading-3{
+    transition: .5s;
+}
+.fading-4{
+    transition: .5s;
+}
+.fading-5{
+    transition: .5s;
+}
+.fading-6{
+    transition: .5s;
+}
